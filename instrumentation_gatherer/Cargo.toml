@@ -1,0 +1,16 @@
+[package]
+name = "instrumentation_gatherer"
+version = "1.0.0"
+edition = "2021"
+description = "Gathers information of the system"
+
+[dependencies]
+anyhow = "1.0.94"
+clap = {version = "4.5.23", features = ["derive"]}
+env_logger = "0.11.5"
+log = "0.4.22"
+serde = {version = "1.0.216", features = ["derive"]}
+serde_json = "1.0.133"
+sysinfo = {version = "0.33.1"}
+
+common = { path = "../common" }
